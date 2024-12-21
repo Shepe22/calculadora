@@ -7,7 +7,7 @@
 
 
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,27 +17,34 @@
     <div class="calculadora"> <!--PRINCIPIO-->
 
         <div class=pantalla>
-            <p class="pantalla__p" id="parrafo">100.12</p>
+            <p class="pantalla__p" id="parrafo">0</p>
         </div>
 
         <div class="botonera">
 
-            <button type="button" class="item" id="botonUno">1</button>    
-            <button type="button" class="item" id="botonDos">2</button>    
-            <button type="button" class="item" id="botonTres">3</button>
-            <button type="button" class="item2" id="botonDivision">/</button> 
-            <button type="button" class="item" id="botonCuatro">4</button>    
-            <button type="button" class="item" id="botonCinco">5</button>    
-            <button type="button" class="item" id="botonSeis">6</button>  
-            <button type="button" class="item2" id="botonMultiplicacion">*</button>  
-            <button type="button" class="item" id="botonSiete">7</button> 
-            <button type="button" class="item" id="botonOcho">8</button>
-            <button type="button" class="item" id="botonNueve">9</button> 
-            <button type="button" class="item2" id="botonResta">-</button> 
-            <button type="button" class="item" id="botonCero">0</button>
-            <button type="button" class="item2" id="botonPunto">.</button>
-            <button type="button" class="item2" id="botonIgual">=</button>
-            <button type="button" class="item2" id="botonSuma">+</button>
+            <button type="button" class="item" id="botonUno" onclick="uno()">1</button>    
+            <button type="button" class="item" id="botonDos" onclick="dos()">2</button>    
+            <button type="button" class="item" id="botonTres" onclick="tres()">3</button>
+
+            <button type="button" class="item2" id="botonDivision" onclick="division()">/</button> 
+
+            <button type="button" class="item" id="botonCuatro" onclick="cuatro()">4</button>    
+            <button type="button" class="item" id="botonCinco" onclick="cinco()">5</button>    
+            <button type="button" class="item" id="botonSeis" onclick="seis()">6</button>  
+
+            <button type="button" class="item2" id="botonMultiplicacion" onclick="multiplicacion()">*</button>  
+
+            <button type="button" class="item" id="botonSiete" onclick="siete()">7</button> 
+            <button type="button" class="item" id="botonOcho" onclick="ocho()">8</button>
+            <button type="button" class="item" id="botonNueve" onclick="nueve()">9</button> 
+
+            <button type="button" class="item2" id="botonResta" onclick="resta()">-</button> 
+
+            <button type="button" class="item" id="botonCero" onclick="cero()">0</button>
+
+            <button type="button" class="item2" id="botonPunto" onclick="punto()">.</button>
+            <button type="button" class="item2" id="botonIgual" onclick="resultado()">=</button>
+            <button type="button" class="item2" id="botonSuma" onclick="suma()">+</button>
 
         </div>
 
